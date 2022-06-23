@@ -28,7 +28,6 @@ public class Packet {
         ByteBuffer byteBuffer = ByteBuffer.wrap(bytes);
 
         Byte expectedBMagic = byteBuffer.get();
-        System.out.println(bMagic);
         if (!expectedBMagic.equals(bMagic))
             throw new Exception("Incorrect first byte");
 

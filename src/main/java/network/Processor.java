@@ -33,7 +33,6 @@ public class Processor implements Runnable{
 
     @Override
     public void run() {
-
         try {
             Thread.sleep(3000);
             new myNetwork().sendMessage(PackResponse.packResponse(packet));
